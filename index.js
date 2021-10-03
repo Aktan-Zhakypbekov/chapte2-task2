@@ -35,3 +35,26 @@ button.addEventListener("click", () => {
     button.textContent = "Получить данные";
   }
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let gif = document.querySelector(".gif");
+let gifUrlFirstPart =
+  "https://api.giphy.com/v1/gifs/translate?api_key=tk8TYgww0V6LrOw7N7UQWh72qThBDX3R&s=";
+let gifUrlSearchTerm = "";
+
+let button2 = document.querySelector(".button2");
+button2.addEventListener("click", (e) => {
+  e.preventDefault();
+  gifUrlSearchTerm = document.querySelector(".search-text").value;
+  fetch(gifUrlFirstPart + gifUrlSearchTerm, { mode: "cors" })
+    .then((res) => {
+      return res.json();
+    })
+    .then((res) => {
+      gif.src = res.data.images.original.url;
+    })
+    .catch((error) => {
+      alert(error);
+    });
+});

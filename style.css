@@ -5,7 +5,8 @@
 }
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -35,5 +36,20 @@ body {
   margin: 1rem;
 }
 .message {
+  margin: 1rem;
+}
+
+.main-container2 {
+  width: 800px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.form {
+  margin: 1rem;
+}
+.gif {
   margin: 1rem;
 }
