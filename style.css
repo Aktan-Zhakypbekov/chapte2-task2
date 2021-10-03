@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 800px;
+  margin: 1rem;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.task1-text {
+  width: 780px;
+  margin: 1rem;
+}
+.network-data-container {
+  width: 780px;
+  margin: 1rem;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button {
+  margin: 1rem;
+}
+.message {
+  margin: 1rem;
+}
